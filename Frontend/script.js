@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         let endpoint = '';
         if (isSeller) {
-             endpoint = actionType === 'signup' ? 'http://localhost:3000/seller/signup' : 'http://localhost:3000/seller/login';
+             endpoint = actionType === 'signup' ? `${window.API_URL}/seller/signup` : `${window.API_URL}/seller/login`;
         } else {
-             endpoint = actionType === 'signup' ? 'http://localhost:3000/auth/signup' : 'http://localhost:3000/auth/login';
+             endpoint = actionType === 'signup' ? `${window.API_URL}/auth/signup` : `${window.API_URL}/auth/login`;
         }
         
         let payload = {};

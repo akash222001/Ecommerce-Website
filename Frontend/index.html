@@ -364,6 +364,7 @@
         </div>
     </div>
 
+    <script src="config.js"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         const token = localStorage.getItem('token');
@@ -390,7 +391,7 @@
 
         async function loadCartItems() {
             try {
-                const response = await fetch('http://localhost:3000/products/cart', {
+                const response = await fetch(`${window.API_URL}/products/cart`, {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 const data = await response.json();
@@ -436,7 +437,7 @@
             e.preventDefault();
 
             try {
-                const response = await fetch('http://localhost:3000/purchase/checkout', {
+                const response = await fetch(`${window.API_URL}/purchase/checkout`, {
                     method: 'POST',
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
@@ -456,7 +457,7 @@
                     "theme": { "color": "#4a00e0" },
                     "handler": async function (rpResponse) {
                         try {
-                            const verifyRes = await fetch('http://localhost:3000/purchase/update-transaction', {
+                            const verifyRes = await fetch(`${window.API_URL}/purchase/update-transaction`, {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json',
@@ -507,7 +508,7 @@
             const grid = document.getElementById('storeGrid');
 
             try {
-                const response = await fetch('http://localhost:3000/products');
+                const response = await fetch(`${window.API_URL}/products`);
                 const data = await response.json();
 
                 if (data.success) {
@@ -560,7 +561,7 @@
             }
 
             try {
-                const response = await fetch('http://localhost:3000/products/cart', {
+                const response = await fetch(`${window.API_URL}/products/cart`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
