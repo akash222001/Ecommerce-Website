@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams - Seller Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body class="split-layout">
+
+    <div class="marquee-container">
+        <div class="marquee-content" style="color: #ffb199;">
+            <span>💼 Grow your business with Dreams</span><span class="dot">•</span>
+            <span>Reach luxury audiences</span><span class="dot">•</span>
+            <span>💼 Grow your business with Dreams</span><span class="dot">•</span>
+            <span>Reach luxury audiences</span><span class="dot">•</span>
+            <span>💼 Grow your business with Dreams</span><span class="dot">•</span>
+            <span>Reach luxury audiences</span><span class="dot">•</span>
+            <span>💼 Grow your business with Dreams</span><span class="dot">•</span>
+            <span>Reach luxury audiences</span>
+        </div>
+    </div>
+
+    <main class="auth-grid">
+        <section class="visual-panel">
+            <div class="image-overlay"></div>
+            <img src="images/auth_bg.png" alt="Luxury abstract background" class="cover-image">
+            
+            <div class="visual-content">
+                <h1 class="visual-title">Dreams Seller Hub.</h1>
+                <p class="visual-subtitle">Manage your inventory, track sales, and reach global buyers.</p>
+            </div>
+            
+            <div class="floating-badget">
+                <span class="pulse"></span> 🟢 Seller Portal Live
+            </div>
+        </section>
+
+        <section class="form-panel">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h2>Seller Login</h2>
+                    <p class="subtitle">Access your merchant dashboard.</p>
+                </div>
+
+                <form id="sellerLoginForm" class="auth-form">
+                    
+                    <div class="input-group">
+                        <label for="sellerEmail">Email Address</label>
+                        <input type="email" id="sellerEmail" name="sellerEmail" placeholder="merchant@dreams.com" required>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="sellerPassword">Password</label>
+                        <input type="password" id="sellerPassword" name="sellerPassword" placeholder="••••••••" required>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="background: linear-gradient(to right, #000000, #333333);">
+                        <span class="btn-text">Sign In as Seller</span>
+                        <div class="btn-loader"></div>
+                    </button>
+
+                </form>
+
+                <div class="auth-footer">
+                    <p>Want to become a merchant? <a href="seller-signup.html">Create a seller account</a></p>
+                    <p style="margin-top: 15px; font-size: 0.8rem;"><a href="login.html" style="color: var(--text-muted);">Back to Customer Login</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

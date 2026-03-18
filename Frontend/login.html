@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body class="split-layout">
+
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>✨ We Deliver Dreams</span>
+            <span class="dot">•</span>
+            <span>Unveiling your curated world</span>
+            <span class="dot">•</span>
+            <span>✨ We Deliver Dreams</span>
+            <span class="dot">•</span>
+            <span>Experience Luxury E-Commerce</span>
+            <span class="dot">•</span>
+            <span>✨ We Deliver Dreams</span>
+            <span class="dot">•</span>
+            <span>Unveiling your curated world</span>
+            <span class="dot">•</span>
+            <span>✨ We Deliver Dreams</span>
+            <span class="dot">•</span>
+            <span>Experience Luxury E-Commerce</span>
+        </div>
+    </div>
+
+    <main class="auth-grid">
+        
+        <section class="visual-panel">
+            <div class="image-overlay"></div>
+            <img src="images/auth_bg.png" alt="Luxury abstract background" class="cover-image">
+            
+            <div class="visual-content">
+                <h1 class="visual-title">Dreams</h1>
+                <p class="visual-subtitle">Step into an aesthetics-first shopping experience.</p>
+            </div>
+            
+            <div class="floating-badget">
+                <span class="pulse"></span> 🟢 Live Online
+            </div>
+        </section>
+
+        <section class="form-panel">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h2>Welcome Back</h2>
+                    <p class="subtitle">Please enter your details to sign in.</p>
+                </div>
+
+                <form id="loginForm" class="auth-form">
+                    
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@dreams.com" required>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <div class="form-actions">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="rememberMe">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <span class="btn-text">Sign In</span>
+                        <div class="btn-loader"></div>
+                    </button>
+
+                </form>
+
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="signup.html">Create one for free</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
